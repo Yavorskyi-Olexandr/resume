@@ -1,0 +1,16 @@
+{
+  "name": "Sanya_Ukrop",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "start chrome C:\\ALLProjects\\Sanya_Ukrop\\index.html",
+    "format": "prettier --write \"**/*.{html,css}\""
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3"
+  }
+}

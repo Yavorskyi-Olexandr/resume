@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: #E7EAEF;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(163, 163, 163, 0.3);
+    padding: 64px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.header__list {
+    height: fit-content;
+    width: fit-content;
+}
+
+.header__list img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.header__container__title {
+    font-size: 36px;
+    text-wrap: nowrap;
+    font-weight: 700;
+    margin-bottom: 8px;
+    height: fit-content;
+}
+
+.header__container__subTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    height: fit-content;
+}
+
+.header__container-contactInfo {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.header__container-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.wrapper__separator {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 16px;
+    margin: 32px 0;
+}
+
+.summary__container {
+    width: 100%;
+    height: fit-content;
+}
+
+.summary__container-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    height: fit-content;
+    color: #e11d48;
+}
+
+.summary__container-text {
+    font-size: 16px;
+    letter-spacing: 0.3px;
+}
+
+.main__container {
+    width: 100%;
+    height: fit-content;
+}
+
+.main__education-container {
+    width: 500px;
+    height: fit-content;
+    margin-bottom: 32px;
+}
+
+.main__education-container h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    height: fit-content;
+    color: #e11d48;
+}
+
+.main__education-container p {
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.main__education-container span {
+    width: 100%;
+    display: block;
+}
+
+.main__skills-container {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 32px;
+}
+
+.main__skills-container h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    height: fit-content;
+    color: #e11d48;
+}
+
+.main__skills-container ul {
+    list-style: disc;
+}
+
+.main__skills-container li {
+    letter-spacing: 0.3px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+}
