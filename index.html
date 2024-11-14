@@ -11,95 +11,121 @@
         <title>Document</title>
     </head>
     <body>
-        <div class="wrapper">
-            <div class="container">
-                <div class="header__container">
-                    <div>
-                        <h1 class="header__container__title">
-                            Яворський Олександр
-                        </h1>
-                        <h3 class="header__container__subTitle">
-                            Game developer
-                        </h3>
-                        <ul class="header__list">
-                            <li class="header__container-contactInfo">
-                                <img src="public/location.svg" />
-                                <span>Ковель</span>
-                            </li>
-                            <li class="header__container-contactInfo">
-                                <img src="public/phone.svg" />
-                                <span>+380000000</span>
-                            </li>
-                            <li class="header__container-contactInfo">
-                                <img src="public/email.svg" />
-                                <span>
-                                    oleksandr.yavorskyi@university.kherson.uam
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                    <img class="header__container-img" src="public/logo.jpg" />
+        <header class="header">
+            <h1 class="header__title">
+                portfolio
+                <span class="header__subtitle">game developer</span>
+            </h1>
+            <div class="header__img">
+                <img src="public/stalker-2.jpg" />
+                <p class="header__img-title">Олександр Яворський</p>
+            </div>
+        </header>
+        <main class="wrapper">
+            <section class="summary__container">
+                <div class="summary__container-leftSidebar">
+                    <h3 class="summary__container-leftSidebar-title">
+                        WELCOME 2024
+                    </h3>
+                    <img
+                        class="summary__container-leftSidebar-img"
+                        src="public/logo.jpg"
+                    />
                 </div>
-                <hr class="wrapper__separator" />
-                <div class="summary__container">
-                    <h3 class="summary__container-title">Опис</h3>
-                    <p class="summary__container-text">
+                <div class="summary__container-rightSidebar">
+                    <p class="summary__container-rightSidebar-text">
                         Студент-програміст, захоплений розробкою ігор, маю
                         навички роботи з ігровим рушієм, таким як Unreal Engine.
                         Опанував основи програмування C++, створюю 3D ігри, а
                         також цікавлюся розробкою ігрових механік, графіки та
                         штучного інтелекту в ігровій індустрії.
                     </p>
-                </div>
-                <hr class="wrapper__separator" />
-                <div class="main__container">
-                    <div class="main__skills-container">
-                        <h3>Скiли</h3>
-                        <ul>
-                            <li>
-                                Маю знання з діагностики та ремонту комп'ютерних
-                                систем і периферії
-                            </li>
-                            <li>Вмiю збирати та модернiзувати комп'ютери</li>
-                            <li>
-                                Владiю основами программування C++ для gameDev
-                            </li>
-                            <li>
-                                Є розуміння основ розробки ігор, включаючи
-                                створення ігрових механік
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="main__skills-container">
-                        <h3>Досягнення</h3>
-                        <ul>
-                            <li>Маю досвід створення 3D ігрових світів</li>
-                            <li>
-                                Опанував основи програмування на C++ для
-                                розробки 3D ігор
-                            </li>
-                            <li>
-                                Працював з ігровим рушієм Unreal Engine для
-                                створення ігрових проєктів
-                            </li>
-                            <li>
-                                Займаюся розробкою ігрових механік в ігровій
-                                індустрії
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="main__education-container">
-                        <h3>Освiта</h3>
-                        <p>
-                            Херсонський державний університет Перший
-                            (бакалаврський) рівень вищої освіти – 3 курс
-                        </p>
-                        <span>
-                            Спеціальність: "Інженерія програмного забезпечення"
+                    <p class="summary__container-rightSidebar-title">
+                        Олександр Яворський
+                        <span class="summary__container-rightSidebar-subTitle">
+                            Game Developer
                         </span>
-                    </div>
+                    </p>
+                    <p class="summary__container-rightSidebar-text">
+                        Постійно вдосконалюю свої навички, вивчаючи нові
+                        інструменти та технології, щоб створювати більш
+                        інтерактивні й захоплюючі ігрові світи.
+                    </p>
                 </div>
+            </section>
+            <section class="project__container">
+                <article class="project__container-first">
+                    <div class="first__grid-item empty"></div>
+                    <div class="first__grid-item">
+                        <img src="public/project1.2.png" />
+                    </div>
+                    <div class="first__grid-item text">
+                        <h2>PROJECT NAME 01</h2>
+                        <p>
+                            Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                            Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                            Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                            Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                            Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                            Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                            Lorem Lorem Lorem Lorem Lorem
+                        </p>
+                    </div>
+                    <div class="first__grid-item">
+                        <img src="public/project1.png" />
+                    </div>
+                </article>
+                <article class="project__container-second">
+                    <div class="second__image-large">
+                        <img src="public/unreal_vertical.png" />
+                    </div>
+                    <div class="second__sidebar-right">
+                        <div class="second__content">
+                            <h2>PROJECT NAME 02</h2>
+                            <p>
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem LoremLorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem LoremLorem Lorem Lorem Lorem Lorem Lorem
+                                <br />
+                                <br />
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+                                Lorem
+                            </p>
+                        </div>
+                        <div class="second__image-small">
+                            <img src="public/project2.2.png" />
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer class="footer__container wrapper">
+            <div>
+                <h2 class="footer__title">Education</h2>
+                <p class="footer__text">
+                    Закінчив Херсонський державний університет за спеціальністю
+                    геймдевелопмент. Під час навчання здобув фундаментальні
+                    знання в програмуванні, алгоритмах та комп'ютерній графіці.
+                    Оволодів мовою C++ і основами створення ігрових механік.
+                </p>
             </div>
-        </div>
+            <img class="footer__largeImage" src="public/school.png" />
+        </footer>
     </body>
 </html>
