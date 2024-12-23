@@ -49,7 +49,7 @@
 .header__img {
     width: 100%;
     height: 65vh;
-    background: #A3A3A333;
+    background: #a3a3a333;
     position: relative;
 }
 
@@ -101,7 +101,7 @@
     width: 225px;
     height: 225px;
     border-radius: 50%;
-    background: #A3A3A333;
+    background: #a3a3a333;
     object-fit: cover;
 }
 
@@ -140,9 +140,181 @@
     margin-top: 8px;
 }
 
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 124px 0 240px 0;
+}
+
+.skills__title-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__container-title {
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.skills__container-subTitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-align: center;
+    width: 75%;
+}
+
+.skills__container-charts {
+    display: flex;
+    width: 80%;
+    height: fit-content;
+    position: relative;
+}
+
+.charts__numbers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    width: 10%;
+    padding: 32px 0;
+    margin-right: 16px;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+.charts__numbers-container span {
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    color: black;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.charts__numbers-container span:hover {
+    color: #3f5efb;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.charts__numbers-container span::after {
+    display: block;
+    content: "";
+    width: 87.5%;
+    height: 1px;
+    right: 0;
+    transform: translateY(-10px);
+    background: #525252;
+    position: absolute;
+}
+
+.charts__rows-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    height: 244px;
+    border: 2px solid #a3a3a3;
+    border-radius: 12px;
+}
+
+.charts__rows-container div {
+    cursor: pointer;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    bottom: -20px;
+    background: transparent;
+}
+
+.charts__rows-container div > span:first-child {
+    display: block;
+    width: 24px;
+    height: 50%;
+    background: linear-gradient(to bottom, #3f5efb, #fc466b);
+    background-size: 300% 300%;
+    background-position: 25% 25%;
+    position: relative;
+    top: 0;
+    border-radius: 0;
+    transition: all 0.3s ease-in-out, background-position 0.3s ease-in-out;
+}
+
+#chart1 {
+    height: 45%;
+}
+
+#chart2 {
+    height: 39%;
+}
+
+#chart3 {
+    height: 58%;
+}
+
+#chart4 {
+    height: 31%;
+}
+
+#chart5 {
+    height: 74%;
+}
+
+#chart6 {
+    height: 56%;
+}
+
+#chart7 {
+    height: 69%;
+}
+
+#chart8 {
+    height: 45%;
+}
+
+.charts__rows-container div > span:first-child > span {
+    position: absolute;
+    top: -32px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.charts__rows-container div > span:first-child:hover > span {
+    opacity: 1;
+}
+
+.charts__rows-container div > span:first-child:hover {
+    top: -16px;
+    border-radius: 8px;
+    background-position: 0 100%;
+}
+
+.charts__rows-container div > span:last-child {
+    width: fit-content;
+    display: block;
+    position: relative;
+    bottom: -16px;
+    left: -0%;
+    text-wrap: nowrap;
+    text-align: center;
+    background: transparent;
+}
+
 .project__container {
     margin-bottom: 128px;
 }
+
 
 .project__container-first {
     display: grid;
@@ -410,7 +582,6 @@
         padding: 0 8px;
         font-size: 16px;
         letter-spacing: 2px;
-
     }
 
     .header__img-title {
@@ -419,6 +590,18 @@
         letter-spacing: 0.3px;
         left: calc(50% - 105px);
     }
+
+    .skills__container {
+        display: block;
+    }
+
+    .charts__rows-container > div:nth-child(3),
+    .charts__rows-container > div:nth-child(4),
+    .charts__rows-container > div:nth-child(7),
+    .charts__rows-container > div:nth-child(8) {
+        display: none;
+    }
+
 
     .summary__container {
         flex-direction: column;
