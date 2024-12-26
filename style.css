@@ -667,3 +667,14 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 440px) {
+    .skillscontainer {
+        display: flex;
+        align-items: end;
+    }
+
+    .chartsnumbers-container span::after {
+        width: 85%;
+    }
+}
